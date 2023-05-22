@@ -39,7 +39,11 @@ out/
 *.tar.gz
 *.rar
 
+### Log Files ###
+*.log
+
 ### Exclusions ###
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
 !**/src/test/**
+!**/db-api.jar
