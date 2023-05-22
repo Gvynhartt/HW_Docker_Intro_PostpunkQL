@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+
+  db:
+    image: postgres:12-alpine3.18
+    restart: always
+    environment:
+      POSTGRES_DB: sampledb
+      POSTGRES_USER: abobus
+      POSTGRES_PASSWORD: 3450d
+    volumes:
+      - ./data:/var/lib/postgres/data
+    ports:
+      - 5432:5432
